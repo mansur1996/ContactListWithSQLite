@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddContactActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#90FF0000">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adding Cantacts"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@color/main_color"
+            android:hint="Contact name"
+            android:paddingStart="12dp"
+            android:backgroundTint="#99675A5A"/>
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            android:layout_marginTop="8dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@color/main_color"
+            android:hint="Contact number"
+            android:paddingStart="12dp"
+            android:backgroundTint="#99675A5A"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_addContact"
+            android:layout_marginTop="8dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            app:backgroundTint="@color/main_color"
+            android:background="@drawable/rounded_corners"
+            android:text="Add"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
